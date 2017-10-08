@@ -1,0 +1,19 @@
+{
+    "name": "sj/polpo-theme",
+    "type": "typo3-cms-extension",
+    "description": "Webseiten-Template des Jenaer Kanu- und Rudervereins e.V.\nBasierend auf Botostrap Version 4",
+    "authors": [
+        {
+            "name": "Sebastian Jung",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sj\\PolpoTheme\\": "Classes"
+        }
+    }
+}

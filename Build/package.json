@@ -1,0 +1,19 @@
+{
+  "name": "jkrv_tempalte",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastian Jung#",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "jquery": "^3.2.1",
+    "popper": "^1.0.0",
+    "popper.js": "^1.12.5"
+  }
+}
