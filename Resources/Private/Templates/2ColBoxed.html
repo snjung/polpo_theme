@@ -1,0 +1,15 @@
+<f:layout name="2ColBoxed" />
+<f:section name="Main">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2 margin30">
+				<f:render partial="Sidenav" />
+				<div class="divide-30"></div>
+				<f:format.raw>{contentAside}</f:format.raw>
+			</div>
+			<div class="col-md-10 margin30">
+				<f:format.raw>{contentMain}</f:format.raw>
+			</div>
+		</div>
+	</div>
+</f:section>
