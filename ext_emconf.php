@@ -26,6 +26,8 @@ Basierend auf Botostrap Version 4',
     'constraints' => [
         'depends' => [
             'typo3' => '7.0.0-8.9.99',
+            'gridelements' => '',
+            'news' => '',
         ],
         'conflicts' => [],
         'suggests' => [],
