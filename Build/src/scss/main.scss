@@ -1,3 +1,12 @@
 @import "bootstrap";
-@import "customBootstrap"
+@import "myVariables";
+@import "mixins.scss";
+@import "global.scss";
+@import "polponav";
+@import "polpohead";
+@import "post.scss";
+@import "contact.scss";
+@import "footer.scss";
+@import "bootstrap-overrides.scss";
+//@import "customBootstrap";
 

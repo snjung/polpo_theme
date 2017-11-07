@@ -13,4 +13,6 @@ config {
 	concatenateCss = 0
 	compressJs = 0
 	concatenateJs = 0
+	#TYPO3 generiert immer Border-Tags für die Bilder (Border = 0), benötige ich aber wegen Bootstrap nicht
+	disableImgBorderAttr = 1
 }

@@ -1,7 +1,11 @@
 // Packages used
 var 
     gulp        = require('gulp'),
-    sass        = require('gulp-sass');
+    sass        = require('gulp-sass'),
+    uglify      = require('gulp-uglify'),
+    concat      = require('gulp-concat'),
+    rename      = require('gulp-rename'),
+    chmod       = require('gulp-chmod');
 
 // Definition of some base folders
 var
@@ -27,12 +31,27 @@ var scss = {
   }
 };
 
+// JS source files
+var js = {
+  in : source + 'js/*.js',
+  out: dest + 'js/'
+};
+
 
 // Compiles sass-files into CSS and moves it to Distribution folder
 gulp.task('sass', function() {
     return gulp.src(scss.in)
         .pipe(sass(scss.sassOpts).on('error', sass.logError))
         .pipe(gulp.dest(scss.out));
+});
+
+gulp.task('compile-js',['move-js'], function(){
+    return gulp.src(js.in)
+      .pipe(concat('polpo.js'))
+      .pipe(gulp.dest(js.out))
+      .pipe(rename('polpo.min.js'))
+      .pipe(uglify())
+      .pipe(gulp.dest(js.out));
 });
 
 //Copies required Javascript-files from the Node-Modules to the Distribution folder
@@ -46,8 +65,9 @@ gulp.task('move-js',['sass'], function(){
 });
 
 // Pushes all the collected and generated files to the approriat folder within the TYPO3-Extension
-gulp.task('publish', ['move-js'], function() {
+gulp.task('publish', ['compile-js'], function() {
     return gulp.src(dest + '**/*.*')
+        .pipe(chmod(0o755))
         .pipe(gulp.dest(publish));
 });
 

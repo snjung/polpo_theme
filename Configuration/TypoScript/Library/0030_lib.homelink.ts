@@ -1,30 +1,18 @@
 ##Link auf die Startseite
-lib.homelink = COA
+lib.homelink = IMAGE
 lib.homelink {
-	10 = IMAGE
-	10 {
-		file = {$resDir}/Public/Images/Header/JKRV_Logo.png
+		file = {$resDir}/Public/images/header/JKRV_Logo.png
 		file {
-			width = 60
-			height = 60
+			width = 30
+			height = 30
 		}
-		10.
 		imageLinkWrap = 1
 		imageLinkWrap {
-			enable = typolink.parameter = 1
+			enable = 1
 			typolink.parameter = 1
-			typolink.title = Zur Startseite
-		#typolink.ATagParams = class = "navbar-brand"
+			typolink.ATagBeforeWrap = 1
+			typolink.ATagParams = class = "navbar-brand"
+			typolink.wrap = | Polpo Jena
 		}
-		#typolink.parameter = 1
-		#typolink.title = Zur Startseite
-		#typolink.ATagParams = class = "navbar-brand"
-	}
-	20 = TEXT
-	20 {
-		value = JKRV
-		typolink.parameter = 1
-		typolink.title = Zur Startseite
-		typolink.ATagParams = class = "navbar-brand"
-	}
+		params = class = "d-inline-block align-top"
 }

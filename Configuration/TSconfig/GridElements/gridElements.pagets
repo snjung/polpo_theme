@@ -1,0 +1,31 @@
+tx_gridelements {
+   # TS Elemente haben Vorrang vor Datensätzen mit gleichen IDs
+   overruleRecords = 1
+ 
+   setup {
+      #OneColumns
+      #-------------------------------------------------------------------------------
+      1 {
+         title = Container
+         description = Container Beispiel
+         frame = 1
+         icon = EXT:polpo_theme/Resources/Public/Icons/Backend/Grids/Grid-Container.png
+         flexformDS = FILE:EXT:polpo_theme/Configuration/FlexForms/Extensions/GridElements/OneColumn.xml
+         topLevelLayout = 0
+         config {
+            colCount = 1
+            rowCount = 1
+            rows {
+               1 {
+                  columns {
+                     1 {
+                        name = Container
+                        colPos = 10
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}

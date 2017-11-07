@@ -3,94 +3,70 @@
 
 mod.web_layout.BackendLayouts {
 	4 {
-		title = 2 Spalten - boxed - Mit Seintennavigation
+		title = Eine Spalte, Standardbreite
 		description = Eine Testbeschreibung
-		config {
-			backend_layout {
-				colCount = 3
-				rowCount = 1
-				rows {
-					1 {
-					columns {
-						1 {
-							name = Aside
-							colPos = 1
-						}
-						2 {
-							name = Main Content
-							colspan = 2
-							colPos = 0
-							}
-						}
-					}
-				}
-			}
-		}
 		icon = EXT:polpo_theme/Resources/Public/icons/layoutIcons/2Col_block.png
-	}
-5 {
-		title = 2 Spalten - volle Bildschirmbreite
-		config {
-			backend_layout {
-				colCount = 3
-				rowCount = 1
-				rows {
-					1 {
-					columns {
-						1 {
-							name = Main Content
-							colspan = 2
-							colPos = 0
-							}
-						2 {
-							name = Aside
-							colPos = 1
-							}
-						}
-					}
-				}
-			}
-		}
-		icon = EXT:polpo_theme/Resources/Public/icons/layoutIcons/2Col_block.png
-	}
+    config {
+      backend_layout {
+        colCount = 1
+        rowCount = 1
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Main Content
+                colPos = 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 	
-	6 {
-		title = Standard Layout (2 Spalten) mit Jumbotron
-		config {
-			backend_layout {
-				colCount = 3
-				rowCount = 2
-				rows {
-					1 {
-						columns {
-							1 {
-								name = Jumbotron
-								colspan = 3
-			 					colPos = 3
-							}
-						}
-					}
-					2 {
-						columns {
-							1 {
-								name = Main Content
-								colspan = 2
-								colPos = 0
-							}
-							2 {
-								name = Aside
-								colPos = 1
-							}
-						}
-					}
-
-				}
-			}
-		}
-		icon = EXT:polpo_theme/Resources/Public/icons/layoutIcons/header-1col.png
-	}	
-}
-
+	5 {
+		title = Eine Spalte, Volle Bildschirmbreite
+		description = Eine Testbeschreibung
+		icon = EXT:polpo_theme/Resources/Public/icons/layoutIcons/2Col_block.png
+    config {
+      backend_layout {
+        colCount = 1
+        rowCount = 1
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Main Content
+                colPos = 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+	
+6	 {
+		title = Eine Spalte, Standardlayout
+		description = Eine Testbeschreibung
+		icon = EXT:polpo_theme/Resources/Public/icons/layoutIcons/2Col_block.png
+    config {
+      backend_layout {
+        colCount = 1
+        rowCount = 1
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Main Content
+                colPos = 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 ### ******************** ###
 ### FLUID STYLED CONTENT ###
 ### ******************** ###
@@ -102,7 +78,7 @@ mod.web_layout.BackendLayouts {
 ###	    GRID ELEMENTS	   ###
 ### ******************** ###
 
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:polpo_theme/Configuration/Elements/PageTS" extensions="pagets">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:polpo_theme/Configuration/TSconfig/GridElements" extensions="pagets">
 
 ### ******************** ###
 ###	        NEWS    	   ###

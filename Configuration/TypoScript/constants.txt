@@ -1,6 +1,6 @@
 # Einbinden der Erweiterungs-Templates verwendeter Extensions
 # So muss im Backend nur das Erweiterungstemplate von polpo_theme eingebunden werden
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/Static/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/constants.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:news/Configuration/TypoScript/constants.txt">
 
 # Es werden alle Typoscript-Dateien mit Dateiendung *.txt im Unterordner Library eingebunden

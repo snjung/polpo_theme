@@ -1,4 +1,1 @@
-
-
-
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_kanu/Configuration/Elements/TypoScript" extensions="ts">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:polpo_theme/Configuration/Elements/TypoScript" extensions="ts">
