@@ -30,7 +30,16 @@ For developing and testing I rely on a webspace from uberspace.de It provides al
 For the development I really enjoy codeanywhere.com because I can work on my project from any client connected to the Web.
 
 
-## Built With
+## The Extension in Details
+
+### ext_emconf.php
+This file contains sort of meta data of the extension alongside with dependencies that will be evaluated during the installation process.
+
+### ext_localconf.php
+For some time, TYPO3 backend-layouts can be defined within an extension instead of heaving to configure them in the backend. To declare Page- and User-TSConfig-Code within the extension, one has to add a ext_localconf.php defining the folder- and file-name to be included. According to best-practice, TSconfig was stored in /Configuration/TSconfig/Page.txt and User.txt. It is also used to declare the Gridelements used for the template as well as setting some options for the TYPO3-system
+
+### Configuration/TypoScript
+This folder contains all TypoScript code. The behaviour is similar to writing the code in the constants and setup field for the template in the backend of TYPO3. The Files constants.txt and setup.txt are evaluated by standard. To organize the code, I have created a subfolder Library distributing the code over various files. The files are included in alphabetical order, thus the numeric nomenclature lets me control the order in which files are evaluated.
 
 
 ## Contributing
